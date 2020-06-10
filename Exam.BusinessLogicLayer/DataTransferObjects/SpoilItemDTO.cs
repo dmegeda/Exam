@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace Exam.BusinessLogicLayer.DataTransferObjects
 {
-    class SpoilItemDTO
+    class SpoilItemDTO : ItemDTO
     {
+        public DateTime ManufacturerDate { get; set; }
+        public DateTime ExpirationDate { get; set; }
+
+        public SpoilItemDTO(DateTime manufacturerDate, DateTime expirationDate) : base()
+        {
+
+        }
     }
 }

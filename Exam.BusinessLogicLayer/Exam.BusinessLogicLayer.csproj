@@ -45,11 +45,17 @@
     <Compile Include="DataTransferObjects\ItemDTO.cs" />
     <Compile Include="DataTransferObjects\ShopDepartmentDTO.cs" />
     <Compile Include="DataTransferObjects\SpoilItemDTO.cs" />
-    <Compile Include="Interfaces\IControlDepartment.cs" />
+    <Compile Include="Interfaces\IControlDepartmentService.cs" />
     <Compile Include="Interfaces\IControlItemService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ControlDepartmentService.cs" />
     <Compile Include="Services\ControlItemService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Exam.DataAccessLayer\Exam.DataAccessLayer.csproj">
+      <Project>{c021e24f-f9eb-46bd-8873-1af7548acd36}</Project>
+      <Name>Exam.DataAccessLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

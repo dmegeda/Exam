@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Exam.BusinessLogicLayer.DataTransferObjects
 {
-    class CategoryDTO
+    public class CategoryDTO
     {
+        public int Id { get; set; }
+        public string Name { get; set; }
     }
 }

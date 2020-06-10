@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Exam.DataAccessLayer.Entities
 {
-    class ShopDepartment
+    public class ShopDepartment
     {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int Category_Id { get; set; }
     }
 }

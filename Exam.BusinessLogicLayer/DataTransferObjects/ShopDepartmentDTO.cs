@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Exam.BusinessLogicLayer.DataTransferObjects
 {
-    class ShopDepartmentDTO
+    public class ShopDepartmentDTO
     {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public CategoryDTO AvailableCategory { get; set; }
     }
 }
